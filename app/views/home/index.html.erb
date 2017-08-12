@@ -19,16 +19,16 @@
                         <h2 class="heading">Latest Project</h2>
                         <div class="content">    
                             <div class="item featured text-center">
-                                    <%# Project.all.each do |project| %>              
-                                        <h3 class="title"><a href="<%#= project.name %>" target="_blank"></a></h3>
+                                    <% Project.all.each do |project| %>              
+                                        <h3 class="title"><a href="<%= project.name %>" target="_blank"></a></h3>
                                         <div class="featured-image">
 
-                                            <img class="img-responsive project-image" src="<%#= project.image_url(:medium) if project.image? %>" alt="" />
+                                            <img class="img-responsive project-image" src="<%= project.image_url(:medium) if project.image? %>" alt="" />
                                             </a>
                                             
                                         <div class="desc text-left">                                    
-                                                <p> <%#= raw project.content %> </p>
-                                     <%# end %>                 
+                                                <p> <%= raw project.content %> </p>
+                                     <% end %>                 
                                     <div class="ribbon">
                                         <div class="text">New</div>
                                         </div>
