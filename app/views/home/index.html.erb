@@ -1,3 +1,18 @@
+<header class="header">
+        <div class="container">                       
+            <img class="profile-image img-responsive pull-left" src="/me.png" alt="Mukhametalim uulu Zumrad " />
+            <div class="profile-content pull-left">
+                <h1 class="name">Zumrad Mukhametalim uulu</h1>
+                <h2 class="desc">Web Developer</h2>   
+                <ul class="social list-inline">
+                    <li><a href="https://twitter.com/knoWOu"><i class="fa fa-twitter"></i></a></li><li><a href="https://plus.google.com/u/0/114690850578994241280"><i class="fa fa-google-plus"></i></a></li>  
+                    <li><a href="https://github.com/tursunbaevz"><i class="fa fa-github-alt"></i></a></li>                  
+
+                </ul> 
+            </div><!--//profile-->
+            <a class="btn btn-cta-primary pull-right" href="http://themes.3rdwavemedia.com/" target="_blank"><i class="fa fa-paper-plane"></i> Contact Me</a>              
+        </div><!--//container-->
+    </header><!--//header-->
     <div class="container sections-wrapper">
         <div class="row">
             <div class="primary col-md-8 col-sm-12 col-xs-12">
@@ -19,7 +34,7 @@
                         <h2 class="heading">Latest Project</h2>
                         <div class="content">    
                             <div class="item featured text-center">
-                                    <% Project.all.each do |project| %>              
+                                    <% Project.all.last(1).each do |project| %>              
                                         <h3 class="title"><a href="<%= project.name %>" target="_blank"></a></h3>
                                         <div class="featured-image">
 
@@ -167,7 +182,7 @@
                                 <div class="item">
                                     <h3 class="level-title">HTML5, CSS3, SASS &amp; Bootstrap <span class="level-label">Expert</span></h3>
                                     <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="60%">
+                                        <div class="level-bar-inner" data-level="70%">
                                         </div>                                      
                                     </div><!--//level-bar-->                                 
                                 </div><!--//item-->
@@ -180,7 +195,7 @@
                                     </div><!--//level-bar-->                                 
                                 </div><!--//item-->
                                 
-                                <p><a class="more-link" href="#"><i class="fa fa-external-link"></i> More on Coderwall</a></p> 
+                                
                             </div>              
                         </div><!--//content-->  
                     </div><!--//section-inner-->                 
@@ -197,7 +212,7 @@
                                 <p class="source"><span class="name">Tim Adams</span><br /><span class="title">Curabitur commodo</span></p>                                                             
                             </div><!--//item-->
                             
-                            <p><a class="more-link" href="#"><i class="fa fa-external-link"></i> More on Linkedin</a></p> 
+                            <!-- <p><a class="more-link" href="#"><i class="fa fa-external-link"></i> More on Linkedin</a></p>  -->
                             
                         </div><!--//content-->
                     </div><!--//section-inner-->
@@ -285,10 +300,10 @@
     <!-- github calendar plugin -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/3.0.2/es6-promise.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fetch/0.10.1/fetch.min.js"></script>
-    <script type="text/javascript" src="assets/github-calendar.min.js"></script>
+   
     <!-- github activity plugin -->
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
-    <script type="text/javascript" src="assets/github-activity.js"></script>
+
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>       
      <!-- <script type="text/javascript" src="github-activity.min.js"></script> -->
     <!-- custom js -->
