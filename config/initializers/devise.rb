@@ -19,7 +19,7 @@ Devise.setup do |config|
 
   # Configure the parent class responsible to send e-mails.
   # config.parent_mailer = 'ActionMailer::Base'
-
+   config.secret_key = 'bc9e2b975484725f847dc05667d7af52f55d3c07a78662b6392de0a63bf25f1a273f37237e5e721d86890d3f4880995cad2c12f24f7adb393a3a65e29d546c15'
   # ==> ORM configuration
   # Load and configure the ORM. Supports :active_record (default) and
   # :mongoid (bson_ext recommended) by default. Other ORMs may be
