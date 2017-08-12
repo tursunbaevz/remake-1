@@ -59,6 +59,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 ruby "2.4.1"
 
 gem "devise"
+gem 'mail_form', '~> 1.7'
+
 gem 'jquery-rails'
 
 gem "carrierwave"
