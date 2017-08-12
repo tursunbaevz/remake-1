@@ -92,7 +92,7 @@ Rails.application.configure do
 
   config.action_mailer.default_url_options = { host: 'https://mighty-brushlands-57516.herokuapp.com' }
   config.action_mailer.delivery_method = :smtp 
-    ActionMailer::Base.stmp_settings = {
+    ActionMailer::Base.smtp_settings = {
       :address => 'smtp.sendgrid.net',
       :port             =>  '587',
       :authentication   => :plain,
