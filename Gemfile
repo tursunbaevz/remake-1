@@ -56,7 +56,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # my own gems here 
 
 
-ruby "2.4.0"
+ruby "2.4.1"
 
 gem "devise"
 gem 'mail_form', '~> 1.7'
