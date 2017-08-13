@@ -13,6 +13,10 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require main
+
+//= require bootstrap.min
+//= require jquery.rss.min
 
 //= require bootstrap-sprockets
 
