@@ -20,7 +20,7 @@ jQuery(document).ready(function($) {
     });
     
     /* Bootstrap Tooltip for Skillset */
-    $('.level-label').tooltip();
+    // $('.level-label').tooltip();
     
     
     /* jQuery RSS - https://github.com/sdepold/jquery-rss */
@@ -55,11 +55,11 @@ jQuery(document).ready(function($) {
     );
     
     /* Github Calendar - https://github.com/IonicaBizau/github-calendar */
-    GitHubCalendar("#github-graph", "IonicaBizau");
+    GitHubCalendar("#github-graph", "tursunbaevz");
     
     
     /* Github Activity Feed - https://github.com/caseyscarborough/github-activity */
-    GitHubActivity.feed({ username: "caseyscarborough", selector: "#ghfeed" });
+    // GitHubActivity.feed({ username: "turunbaevz", selector: "#ghfeed" });
 
 
 });

@@ -1,5 +1,7 @@
 {
   "name": "remake",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "typescript": "^2.4.2"
+  }
 }
