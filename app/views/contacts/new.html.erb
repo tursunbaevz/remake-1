@@ -1,30 +1,42 @@
-<h1 id="page_title">Say Hello!</h1>
+<section id="lan_donate" class="sppb-section " style="padding: 8% 0;color:#ffffff;background-image:url(/mountains.jpg);background-repeat:no-repeat;background-size:cover;">
+	<div class="sppb-container">
+		<div class="sppb-row">
+			<div class="sppb-col-sm-12">
+				<div class="sppb-addon-container sppb-wow zoomIn">
+					<div class="sppb-addon sppb-addon-cta">
+					<div class="sppb-row">
+						<div class="sppb-col-sm-8">
+						<!-- <h3 class="sppb-cta-title" style="color:#ffffff;">some text</h3>
+						<p class="sppb-cta-text">some text</p> -->
+						<h1 id="page_title">Say Hello!</h1>
+							<div class="skinny_wrapper wrapper_padding">
+							<%= bootstrap_form_for(@contact) do |f| %>
+								<div class="form-group">
+										<%= f.text_field :name, required: true %>
+								</div>	
+								<div class="form-group ">
+									<%= f.text_field :email, required: true %>							
+								</div>	
+								<br>
+								<div class="form-group">
+									<%= f.text_area :message, as: :text %>	
+								</div>
 
-<div class="skinny_wrapper wrapper_padding">
-	<%= form_for @contact do |f| %>
+								<div class="hidden">
+									<%= f.text_field :nickname, hint: "leave this field blank" %>
+								</div>
 
-		<div class="form-group">
-			<%= f.label :name %> 
-			<%= f.text_field :name, required: true %>
+								<br>
+									<%= f.submit 'Send Message', class: "btn btn-success"  %>
+							<% end %>
+							</div>
+						</div>
+						<!-- <div class="sppb-col-sm-4 sppb-text-right"><a target="_blank" href="donate.html" class="sppb-rowb-btn sppb-btn-primary sppb-btn- " role="button">Donate Now</a></div> -->
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
+	</div>
+</section>
 
-		<div class="form-group">
-			<%= f.label :email %> 
-			<%= f.text_field :email, required: true %>
-		</div>
-		<br>
-		
-		<div class="form-group">
-			<%= f.label :message %> <br>
-			<%= f.text_area :message, as: :text %>
-		</div>
-
-		<div class="hidden">
-			<%= f.label :nickname %> <br>
-			<%= f.text_field :nickname, hint: "leave this field blank" %>
-		</div>
-
-	<br>
-		<%= f.submit 'Send Message', class: "btn btn-default"  %>
-	<% end %>
-</div>

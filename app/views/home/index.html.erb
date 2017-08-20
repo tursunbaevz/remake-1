@@ -1,28 +1,31 @@
-<header class="header">
+
+    <!-- ******HEADER****** --> 
+    <header class="header">
         <div class="container">                       
-            <img class="profile-image img-responsive pull-left" src="/me.png" alt="Mukhametalim uulu Zumrad " />
+            <img class="profile-image img-responsive pull-left" src="/me.png" alt="Zumrad" />
             <div class="profile-content pull-left">
                 <h1 class="name">Zumrad Mukhametalim uulu</h1>
                 <h2 class="desc">Web Developer</h2>   
                 <ul class="social list-inline">
-                    <li><a href="https://twitter.com/knoWOu"><i class="fa fa-twitter"></i></a></li><li><a href="https://plus.google.com/u/0/114690850578994241280"><i class="fa fa-google-plus"></i></a></li>  
+                    <li><a href="https://twitter.com/knoWOu"><i class="fa fa-twitter"></i></a></li>                   
+                    <li><a href="https://plus.google.com/u/0/114690850578994241280"><i class="fa fa-google-plus"></i></a></li>
                     <li><a href="https://github.com/tursunbaevz"><i class="fa fa-github-alt"></i></a></li>                  
-
+                                   
                 </ul> 
             </div><!--//profile-->
             <a class="btn btn-cta-primary pull-right" href="<%= new_contact_path %>" target="_blank"><i class="fa fa-paper-plane"></i> Contact Me</a>              
         </div><!--//container-->
     </header><!--//header-->
+    
     <div class="container sections-wrapper">
         <div class="row">
             <div class="primary col-md-8 col-sm-12 col-xs-12">
                 <section class="about section">
                     <div class="section-inner">
-                        <h2 class="heading"></h2>
+                        <h2 class="heading">About Me</h2>
                         <div class="content">
-                           <!--  <p><b> Давайте Знакомиться! Меня зовут Зумрад.</p>    
-                                <p>Я являюсь Web - программистом, люблю свою работу и изо дня в день улучшая свои навыки, пологаясь на Господа создаю свое будущее...</p></b> -->
-         
+                            <h1>todo</h1>
+                        <p> some text here </p>
                         <p>Вы можете ознакомится с моими работами на этом сайте или пройдя по ссылке  <a href="https://github.com/tursunbaevz">github.com</a></i></p>
                          
                         </div><!--//content-->
@@ -31,26 +34,24 @@
     
                <section class="latest section">
                     <div class="section-inner">
-                        <h2 class="heading">Latest Project</h2>
+                        <h2 class="heading">Latest Projects</h2>
                         <div class="content">    
+                                               
                             <div class="item featured text-center">
-                                    <% Project.all.last(1).each do |project| %>              
-                                        <h3 class="title"><a href="<%= project.name %>" target="_blank"></a></h3>
-                                        <div class="featured-image">
-
-                                            <img class="img-responsive project-image" src="<%= project.image_url(:medium) if project.image? %>" alt="" />
-                                            </a>
-                                            
-                                        <div class="desc text-left">                                    
-                                                <p> <%= raw project.content %> </p>
-                                     <% end %>                 
-                                    <div class="ribbon">
-                                        <div class="text">New</div>
-                                        </div>
+                                <p class="summary"></p>
+                                <div class="featured-image">
+                            <% Project.all.last(1).each do |project| %>              
+                                <h3 class="title"><a href="<%= project.name %>" target="_blank"></a></h3>
+                                    <img class="img-responsive project-image" src="<%= project.image_url(:medium) if project.image? %>" alt="" />
+                                    <div class="desc text-left">                                    
+                                        <p> <%= raw project.content %> </p>
                                     </div>
-                                </div><!--//desc-->         
-                                <a class="btn btn-cta-secondary" href="https://github.com/tursunbaevz/charity-fund-" target="_blank"><i class="fa fa-thumbs-o-up"></i> See the code</a>                 
-                            </div><!--//item-->
+                            <% end %> 
+
+                                <div class="ribbon">
+                                    <div class="text">New</div>
+                                    </div>
+                                </div>
                         </div><!--//content-->  
                     </div><!--//section-inner-->                 
                 </section><!--//section-->
@@ -63,30 +64,19 @@
                                 <h3 class="title"><a href="#">Project Title </a></h3>
                                 <p class="summary"><!-- Provide a brief description of your project. --></p>
                             </div><!--//item-->
-                            <a class="btn btn-cta-secondary" href="#">More on CoderWall <i class="fa fa-chevron-right"></i></a>
-                            
+                            <a class="btn btn-cta-secondary" href="#">todo <i class="fa fa-chevron-right"></i></a>   
                         </div><!--//content-->  
                     </div><!--//section-inner-->                 
                 </section><!--//section-->
                 
-                <section class="experience section">
+               <section class="experience section">
                     <div class="section-inner">
                         <h2 class="heading">Work Experience</h2>
                         <div class="content">
                             <div class="item">
                                 <h3 class="title">Co-Founder & Lead Developer - <span class="place"><a href="#">Startup Hub</a></span> <span class="year">(2014 - Present)</span></h3>
                                 <p>Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt.</p>
-                            </div><!--//item-->
-                            <div class="item">
-                                <h3 class="title">Software Engineer - <span class="place"><a href="#">Google</a></span> <span class="year">(2013 - 2014)</span></h3>
-                                <p>Vivamus a tortor eu turpis pharetra consequat quis non metus. Aliquam aliquam, orci eu suscipit pellentesque, mauris dui tincidunt enim. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.</p>
-                            </div><!--//item-->
-                            
-                            <div class="item">
-                                <h3 class="title">Web  Developer - <span class="place"><a href="#">eBay</a></span> <span class="year">(2012 - 2013)</span></h3>
-                                <p>Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
-                            </div><!--//item-->
-                            
+                            </div><!--//item-->                
                         </div><!--//content-->  
                     </div><!--//section-inner-->                 
                 </section><!--//section-->
@@ -97,25 +87,19 @@
                         <div id="github-graph" class="github-graph">
 
                         </div><!--//github-graph-->
-
-                             
+      
                         <!--//Usage: http://caseyscarborough.com/projects/github-activity/ -->  
                         <!-- <div id="feed"></div>
                         <script>
                             GitHubActivity.feed({ username: "tursunbaevz", selector: "#feed" });
                         </script> -->
-
                         <!-- <div id="ghfeed" class="ghfeed"> -->
-                                         <!-- Prepare a container for your calendar. -->
+                                        <!-- Prepare a container for your calendar. -->
                             <script
                               src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js">
                             </script>
-        
-
+    
                             <!-- Optionally, include the theme (if you don't want to struggleto write the CSS) -->
-                           
-                            
-
                             <!-- Prepare a container for your calendar. -->
                            
 
@@ -125,14 +109,14 @@
                 </section><!--//section-->
             </div><!--//primary-->
             <div class="secondary col-md-4 col-sm-12 col-xs-12">
-                 <aside class="info aside section">
+                <aside class="info aside section">
                     <div class="section-inner">
                         <h2 class="heading sr-only">Basic Information</h2>
                         <div class="content">
                             <ul class="list-unstyled">
                                 <li><i class="fa fa-map-marker"></i><span class="sr-only">Location:</span>Бишкек - Ош, Кыргызстан</li>
                                 <li><i class="fa fa-envelope-o"></i><span class="sr-only">Email:</span><a href="http://gmail.com">zuma9405@gmail.com</a></li>
-                                <li><i class="fa fa-link"></i><span class="sr-only">Website:</span><a href="#">http://www.website.com</a></li>
+                                <!-- <li><i class="fa fa-link"></i><span class="sr-only">Website:</span><a href="#">http://www.website.com</a></li> -->
                             </ul>
                         </div><!--//content-->  
                     </div><!--//section-inner-->                 
@@ -147,9 +131,6 @@
                             </p>
                             
                             <div class="skillset">
-                               
-
-                                
                                 <div class="item">
                                     <h3 class="level-title">Javascript &amp; jQuery<span class="level-label">Expert</span></h3>
                                     <div class="level-bar">
@@ -237,45 +218,37 @@
                         </div><!--//content-->
                     </div><!--//section-inner-->
                 </aside><!--//section-->
+
+               
                 
-                <aside class="list conferences aside section">
+                <!-- <aside class="list conferences aside section">
                     <div class="section-inner">
                         <h2 class="heading">Conferences</h2>
                         <div class="content">
                             <ul class="list-unstyled">
-                                <li><i class="fa fa-calendar"></i> <a href="https://developer.apple.com/wwdc/" target="_blank"></a> </li>
-                                <li><i class="fa fa-calendar"></i> <a href="http://hive.aigaseattle.org/"></a></li>
-                            </ul>
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
+                                <li><i class="fa fa-calendar"></i> <a href="https://developer.apple.com/wwdc/" target="_blank">WWDC 2014</a> (San Francisco)</li>
+                                <li><i class="fa fa-calendar"></i> <a href="http://hive.aigaseattle.org/">Hive</a> (Seattle)</li>
+                            </ul> -->
+                       <!--  </div> --><!--//content-->
+                    <!-- </div> --><!--//section-inner-->
+                <!-- </aside> --><!--//section-->
                 
-                <aside class="list music aside section">
-                    <div class="section-inner">
-                        <h2 class="heading"><!-- Favourite coding music --></h2>
-                        <div class="content">
-                            <ul class="list-unstyled">
-                              <%# @projects.each do |project| %>
-                                  <tr>
-                                    <!-- <li><i class="fa fa-headphones"></i> --> <%#= link_to 'play song', project.mp3.url, :class => "play" if project.mp3? %><!-- </a></li> -->
-                                  </tr>
-                             <%# end %>
-                            </ul>
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-
-                            
+               
               
             </div><!--//secondary-->    
         </div><!--//row-->
     </div><!--//masonry-->
     
     <!-- ******FOOTER****** --> 
+    <footer class="footer">
+        <div class="container text-center">
+                <small class="copyright"> 2017 <i class="fa fa-heart"></i></a></small>
+        </div><!--//container-->
+    </footer><!--//footer-->
  
     <!-- Javascript -->          
- 
-    <script type="text/javascript" src="assets/bootstrap.min.js"></script>    
-    <script type="text/javascript" src="assets/jquery.rss.min.js"></script> 
+    <script type="text/javascript" src="/assets/bootstrap.min.js"></script>    
+    <script type="text/javascript" src="/assets/jquery.rss.min.js"></script> 
     <!-- github calendar plugin -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/3.0.2/es6-promise.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fetch/0.10.1/fetch.min.js"></script>
@@ -286,5 +259,7 @@
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>     
      <!-- <script type="text/javascript" src="github-activity.min.js"></script> -->
     <!-- custom js -->
-    <script type="text/javascript" src="assets/main.js"></script>            
       
+    <script type="text/javascript" src="/assets/main.js"></script>           
+
+
