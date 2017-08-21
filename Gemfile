@@ -62,6 +62,7 @@ gem "devise"
 gem 'mail_form', '~> 1.7'
 
 gem 'jquery-rails'
+gem 'jquery-turbolinks'
 
 gem "carrierwave"
 gem "mini_magick"
@@ -71,5 +72,6 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem 'sass-rails', '>= 3.2'
 
 gem 'bootstrap_form'
+gem 'ckeditor'
 
 gem 'rails_12factor', group: :production

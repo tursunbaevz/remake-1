@@ -5,20 +5,23 @@
 	<title>Admin Panel</title>
 		<%= csrf_meta_tags %>
 
-	    <%= stylesheet_link_tag    'admin/admin', media: 'all', 'data-turbolinks-track': 'reload' %>
-	    <%= javascript_include_tag 'admin/application', 'data-turbolinks-track': 'reload' %>
+	    <%= stylesheet_link_tag    'admin/admin', media: 'all'  %>
+	    <%= javascript_include_tag 'admin/application'  %>
+
+
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     	<meta name="viewport" content="width=device-width, initial-scale=1">
     	   <title>Admin Area | Posts</title>
+
 	    <!-- Bootstrap core CSS -->
-	    <link href="/assets/admin/bootstrap.min.css" rel="stylesheet">
-	    <link href="/assets/admin/style.css" rel="stylesheet">
+	    <link href="../admin/bootstrap.min.css" rel="stylesheet">
+	    <link href="../assets/admin/style.css" rel="stylesheet">
 	    <script src="https://cdn.ckeditor.com/4.6.1/standard/ckeditor.js"></script>
   
 </head>
 <body>
-	<div class="container">
-		<%= yield %>
-	</div>
+
+<%= yield %>
+
 </body>
 </html>

@@ -14,9 +14,11 @@
 
 
 //= require jquery
+//= require jquery.turbolinks
 //= require jquery_ujs
 
-
+//= require admin/bootstrap.min
+//= require ckeditor/init
 
 //= require_tree .
 

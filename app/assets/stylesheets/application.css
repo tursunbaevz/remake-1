@@ -1,17 +1,8 @@
 /*
+
 *= require bootstrap.min
 
-
-
-*= require font-awesome
-*= require font-awesome.min
-*= require github-calendar
-*= require home
 *= require rails_bootstrap_forms
-
-*= require bootstrap.min
-*= require styles
-
 
 
 *= require_tree .
