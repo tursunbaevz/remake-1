@@ -14,12 +14,12 @@
 
 
 //= require jquery
-//= require jquery.turbolinks
+//= require admin/bootstrap.min
 //= require jquery_ujs
 
-//= require admin/bootstrap.min
 //= require ckeditor/init
 
+//= require turbolinks
 //= require_tree .
 
 

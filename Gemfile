@@ -62,7 +62,7 @@ gem "devise"
 gem 'mail_form', '~> 1.7'
 
 gem 'jquery-rails'
-gem 'jquery-turbolinks'
+
 
 gem "carrierwave"
 gem "mini_magick"

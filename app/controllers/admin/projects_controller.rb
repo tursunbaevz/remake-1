@@ -6,6 +6,8 @@ class Admin::ProjectsController < ApplicationController
   # GET /projects.json
   def index
     @projects = Project.all
+    @project = Project.new
+
   end
 
   # GET /projects/1
