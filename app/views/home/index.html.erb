@@ -42,7 +42,7 @@
                                 <div class="featured-image">
                             <% Project.all.last(1).each do |project| %>              
                                 <h3 class="title"><a href="<%= project.name %>" target="_blank"></a></h3>
-                                    <img class="img-responsive project-image" src="<%= project.image_url(:medium) if project.image? %>" alt="" />
+                                    <img class="img-responsive project-image" src="<%#= project.image_url(:medium) if project.image? %>" alt="" />
                                     <div class="desc text-left">                                    
                                         <p> <%= raw project.content %> </p>
                                     </div>
@@ -167,9 +167,9 @@
                         <div class="content">
                             <div class="item">
                                 <blockquote class="quote">                                  
-                                    <p><i class="fa fa-quote-left"></i>Zumrad is an excellent software developer and he is passionate about what he does. You can totally count on him to deliver your projects!</p>
+                                    <p><i class="fa fa-quote-left"></i>TODO</p>
                                 </blockquote>                
-                                <p class="source"><span class="name">Eric Neifert</span><br /><span class="title"></span></p>                                                             
+                                <p class="source"><span class="name"></span><br /><span class="title"></span></p>                                                             
                             </div><!--//item-->
                             
                             <!-- <p><a class="more-link" href="#"><i class="fa fa-external-link"></i> More on Linkedin</a></p>  -->

@@ -1,3 +1,4 @@
+
 source 'https://rubygems.org'
 
 git_source(:github) do |repo_name|
@@ -64,9 +65,13 @@ gem 'mail_form', '~> 1.7'
 gem 'jquery-rails'
 
 
-gem "carrierwave"
-gem "mini_magick"
-gem 'rmagick'
+group :development, :test do
+  gem 'dotenv-rails'
+end
+
+gem "paperclip", "~> 5.0.0"
+gem 'aws-sdk', '~> 2.3'
+
 
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'sass-rails', '>= 3.2'

@@ -20,14 +20,14 @@ body {
 
 /* ==== email form ==== */
 
+
+
 #page_title{
   text-align: center;
   color:#538b01;
 }
 
-.form_text {
-  text-align: center;
-}
+
 
 .form_text {
   text-align: center;
@@ -40,7 +40,7 @@ body {
   margin: auto;
   width: 60%;
   padding: 50px;
-
+  text-align: center;
 }
 
 
