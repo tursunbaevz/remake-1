@@ -71,7 +71,13 @@ end
 
 gem "paperclip", "~> 5.0.0"
 gem 'aws-sdk', '~> 2.3'
+  
+gem "figaro"
 
+group :development do
+  gem "better_errors"
+  gem "binding_of_caller"
+end
 
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'sass-rails', '>= 3.2'

@@ -42,7 +42,7 @@
                                 <div class="featured-image">
                             <% Project.all.last(1).each do |project| %>              
                                 <h3 class="title"><a href="<%= project.name %>" target="_blank"></a></h3>
-                                    <img class="img-responsive project-image" src="<%#= project.image_url(:medium) if project.image? %>" alt="" />
+                                    <img class="img-responsive project-image" src="<%= project.image.url(:medium) if project.image? %>" alt="" />
                                     <div class="desc text-left">                                    
                                         <p> <%= raw project.content %> </p>
                                     </div>

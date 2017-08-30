@@ -46,7 +46,8 @@
                       <tr>
                         <td><%= project.name %></td>
                         <td><%= strip_tags project.content %></td>
-                        <td> <%= image_tag(project.image(:thumb)) if project.image? %></td>
+
+                        <td> <%= image_tag(project.image.url(:thumb)) if project.image? %></td>
                         <td> <%= link_to 'Edit', edit_admin_project_path(project), class: "btn btn-default " %> 
   
                         <%= link_to 'Destroy', admin_project_path(project), class:  "btn btn-danger" , method: :delete, data: { confirm: 'Are you sure?' } %></td>
