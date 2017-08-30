@@ -83,6 +83,6 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem 'sass-rails', '>= 3.2'
 
 gem 'bootstrap_form'
-gem 'ckeditor'
+
 
 gem 'rails_12factor', group: :production
