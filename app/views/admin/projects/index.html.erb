@@ -3,6 +3,9 @@
       <div class="row">
         <div class="col-md-10">
           <h1><span class="glyphicon glyphicon-cog" aria-hidden="true"></span><small>Manage Blog Posts</small></h1>
+           <div>
+              <li> <%= current_admin.id %> -  Hi Admin! </li>
+            </div>
         </div>
         <div class="col-md-2">
           <div class="dropdown create">
@@ -26,6 +29,8 @@
             </div>
           </div>
           <div class="col-md-12">
+           <li><%= link_to 'Sign out', destroy_admin_session_path, method: :delete , class: 'btn btn-default' %></li>
+           <li><%= link_to 'edit', edit_admin_password_path,  class: 'btn btn-default' %></li>
             <!-- Website Overview -->
             <div class="panel panel-default">
               <div class="panel-heading main-color-bg">

@@ -1,13 +1,68 @@
+<div class="wrapper">
+	<h1 class="thankyou-message"> Thank you for your message!</h1>
 
-
-<div class="skinny_wrapper wrapper_padding">
-	<h1> Thank you for your message!</h1>
-
-	<h3>I'll get back to you soon.</h3>
+	<h3 class="thankyou-message">I'll get back to you soon.</h3>
 	
 	<div class="buttun-back-to-page">
-		<%= link_to "Back to main page", root_path, class: "btn btn-success"  %>
+		<%= link_to "Back to main page", root_path, class: "btn btn-success create-btn"  %>
 	</div>
-
-
 </div>
+
+
+<style>
+
+.wrapper{
+	background-image:url(/message.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	width: 100%;
+	height: 710px;
+	margin: 0 auto;
+	padding: 19rem;
+	box-sizing: border-box;
+	text-align: center;
+
+
+}
+
+.thankyou-message {
+	color: seashell;
+}
+
+
+.create-btn {
+    color: #fff;
+    background-color: deepskyblue; 
+    border-color: deepskyblue;
+}
+
+@media screen and (max-width: 569px){
+	.wrapper{
+		padding: 16rem;
+		padding-top: 180px;
+	}
+}
+
+
+@media screen and (max-width: 508px){
+	.wrapper{
+		padding: 13rem;
+		padding-top: 190px;
+		
+	}
+}
+
+
+
+@media screen and (max-width: 449px){
+	.wrapper{
+		padding: 10rem;
+		padding-top: 170px;
+
+	}
+}
+
+
+
+	
+</style>

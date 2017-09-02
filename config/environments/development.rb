@@ -53,7 +53,7 @@ Rails.application.configure do
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 
 
- config.paperclip_defaults = {
+  config.paperclip_defaults = {
     storage: :s3,
     s3_credentials: {
       bucket: ENV['S3_BUCKET_NAME'],
@@ -62,6 +62,6 @@ Rails.application.configure do
       s3_region: ENV['S3_REGION'],
       s3_host_name: ENV['S3_HOST_NAME']
     }
-}  
+  }  
 
 end

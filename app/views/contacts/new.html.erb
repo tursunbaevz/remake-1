@@ -1,42 +1,95 @@
-<section id="lan_donate" class="sppb-section " style="padding: 8% 0;color:#ffffff;background-image:url(/mountains.jpg);background-repeat:no-repeat;background-size:cover;">
-	<div class="sppb-container">
-		<div class="sppb-row">
-			<div class="sppb-col-sm-12">
-				<div class="sppb-addon-container sppb-wow zoomIn">
-					<div class="sppb-addon sppb-addon-cta">
-					<div class="sppb-row">
-						<div class="sppb-col-sm-8">
-						<!-- <h3 class="sppb-cta-title" style="color:#ffffff;">some text</h3>
-						<p class="sppb-cta-text">some text</p> -->
-						<h1 id="page_title">Say Hello!</h1>
-							<div class="skinny_wrapper wrapper_padding">
-							<%= bootstrap_form_for(@contact) do |f| %>
-								<div class="form-group">
-									<%= f.text_field :name, required: true %>
-								</div>	
-								<div class="form-group ">
-									<%= f.text_field :email, required: true %>							
-								</div>	
-								<br>
-								<div class="form-group">
-									<%= f.text_area :message, as: :text %>	
-								</div>
-
-								<div class="hidden">
-									<%= f.text_field :nickname, hint: "leave this field blank" %>
-								</div>
-
-								<br>
-									<%= f.submit 'Send Message', class: "btn btn-success"  %>
-							<% end %>
-							</div>
-						</div>
-						<!-- <div class="sppb-col-sm-4 sppb-text-right"><a target="_blank" href="donate.html" class="sppb-rowb-btn sppb-btn-primary sppb-btn- " role="button">Donate Now</a></div> -->
-						</div>
-					</div>
-				</div>
-			</div>
+<div class="wrapper" >
+	<h1 id="page_title">Say Hello!</h1>
+	<%= bootstrap_form_for(@contact) do |f| %>
+		<div class="form-group">
+			<%= f.text_field :name, required: true %>
+		</div>	
+		<div class="form-group ">
+			<%= f.text_field :email, required: true %>							
+		</div>	
+		<br>
+		<div class="form-group">
+			<%= f.text_area :message, as: :text %>	
 		</div>
-	</div>
-</section>
+
+		<div class="hidden">
+			<%= f.text_field :nickname, hint: "leave this field blank" %>
+		</div>
+
+		<br>
+			<%= f.submit 'Send Message', class: "btn btn-success new-btn"  %>
+	<% end %>
+</div>
+
+
+<style>
+
+.wrapper {
+	background-image:url(/message.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	margin: 0 auto;
+	padding: 16rem;
+	box-sizing: border-box;
+
+}
+
+
+#page_title{
+  color:#538b01;
+  text-align: center;
+}
+
+.form_text {
+  text-align: center;
+  
+}
+
+@media screen and (max-width: 1366px){ 
+	form {
+		width: 300px;
+		margin: auto;
+		text-align: center;
+	}
+
+	.wrapper {
+		padding: 31.2rem;
+
+	}
+	
+}
+
+@media screen and (max-width: 1280px){ 
+	form {
+		width: 300px;
+		margin: auto;
+		text-align: center;
+	}
+
+	.wrapper {
+		padding: 15.2rem;
+	}
+	
+}
+
+
+
+@media screen and (max-width: 768px){ 
+	form {
+		width: 250px;
+		margin: auto;
+		text-align: center;
+	}
+
+	.wrapper {
+		padding: 8.5rem; 
+		height: 648px;
+	}
+
+	
+}
+
+
+
+</style>
 

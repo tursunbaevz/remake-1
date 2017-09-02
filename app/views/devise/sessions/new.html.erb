@@ -1,26 +1,59 @@
-<h2>Log in</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Log-in</title>
+  <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet">
+</head>
+<body>
+<h2 class="field-devise" id="hello-admin">Hello Admin</h2>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field">
+  <div class="field-devise">
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true %>
   </div>
 
-  <div class="field">
+  <div class="field-devise">
     <%= f.label :password %><br />
     <%= f.password_field :password, autocomplete: "off" %>
   </div>
 
   <% if devise_mapping.rememberable? -%>
-    <div class="field">
+    <div class="field-devise">
       <%= f.check_box :remember_me %>
       <%= f.label :remember_me %>
     </div>
   <% end -%>
 
-  <div class="actions">
+  <div class="field-devise">
     <%= f.submit "Log in" %>
   </div>
 <% end %>
 
-<%= render "devise/shared/links" %>
+</body>
+</html>
+<style>
+  /* ==== devise ==== */
+
+  #hello-admin{
+    font-family: 'Alfa Slab One', cursive;
+    color: #DAE3E7;
+  }
+
+  .field-devise {
+    text-align: center;
+    padding-top: 20px;
+
+  }
+
+ body{
+    background-image: url('/log-in.jpg');
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+  }
+</style>
+   
+
