@@ -17,10 +17,11 @@ body {
 
 }
 
-
-
-
-
+.hr-content {
+  border-top: 1.5px solid #DAE3E7;
+  width: 400px; 
+  color: #DAE3E7;
+}
 
 
 
@@ -207,6 +208,7 @@ iframe {
 .latest .item .title {
   font-size: 18px;
   margin-top: 0;
+  text-align: center;
 }
 .latest .item .title .label {
   margin-left: 5px;
